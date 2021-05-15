@@ -1,1 +1,1 @@
-export `NODE_HOME=/Users/abdulrafiu.bello/.nvm/versions/node/v11.12.0`
+export `NODE_HOME=~/.nvm/versions/node/v11.12.0`
