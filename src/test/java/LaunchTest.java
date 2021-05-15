@@ -19,14 +19,11 @@ public class LaunchTest extends BaseTest{
 
     @BeforeClass
     public void setUp() throws IOException, URISyntaxException {
-
-        File classpathRoot = new File(System.getProperty("user.dir"));
-        File appDir = new File(classpathRoot, "../apps");
-        File app = new File(appDir.getCanonicalPath(), "ApiDemos-debug.apk");
+        String appStr = getAppFile("TheApp.apk").getAbsolutePath();;
 
         URL remoteUrl = getServiceUrl();
 
-        DriverManager driverManager = new DriverManager(remoteUrl, getAppFile("TheApp"));
+        DriverManager driverManager = new DriverManager(remoteUrl, appStr);
 
         driver = (AndroidDriver) driverManager.getDriver();
 
