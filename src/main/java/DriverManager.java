@@ -20,7 +20,6 @@ public class DriverManager {
         desiredCapabilities.setCapability("platformName", "Android");
         desiredCapabilities.setCapability("platformVersion", "9.0");
         desiredCapabilities.setCapability("deviceName", "Android Emulator");
-        desiredCapabilities.setCapability("app", "https://github.com/cloudgrey-io/the-app/releases/download/v1.2.1/TheApp-v1.2.1.apk");
         desiredCapabilities.setCapability("app", app);
         desiredCapabilities.setCapability("noReset", true);
         desiredCapabilities.setCapability("automationName", "UiAutomator2");
